@@ -1,0 +1,490 @@
+<html><head>
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    .dropbtn {
+       background-color:transparent;
+      /* color: white; */
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      
+      text-decoration: none;
+      display: inline-block;
+      color: rgba(202, 206, 221, 0.8);
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      /* outline: none; */
+      margin-top: -13px;
+      
+    }
+    
+    li a{
+      padding: 35px;
+      text-decoration:none;
+      color: rgba(202, 206, 221, 0.8);
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    li a:hover{
+      color:white;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      background:transparent;
+      color: rgba(202, 206, 221, 0.8);
+      border:none;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {color:white}
+  
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mySlides {display:none}
+#left-sidebar {
+  width: 42%;
+  float: left;
+  margin: 0 15px;
+  background: #ccc; 
+  min-height: 500px; 
+  text-align: center;
+}
+#right {
+  float: right;
+  width: 55%;
+  background: #efefef; 
+  text-align: center;
+  min-height: 500px;
+}
+
+ 
+    </style>
+    </head>
+
+
+<body style="background-image: url('https://www.1grandtrunk.com/wp-content/uploads/2018/09/Flipkart-International-Shipping-1.jpg');background-repeat: no-repeat;background-size: 100%;position:absolute;">
+        <header id="header">
+
+        <nav style="display: -webkit-box;background: #101522;">
+          
+<ul style="list-style-type: none">
+       <li> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b12e9fcb-cf00-4b56-9f99-cd7c4a263dc3/daicm7u-0e66f8c3-39b3-4cc3-8d74-3b9c25e839cc.png/v1/fill/w_512,h_512,strp/unreal_engine_honeycomb_by_vitalfyre_daicm7u-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01MTIiLCJwYXRoIjoiXC9mXC9iMTJlOWZjYi1jZjAwLTRiNTYtOWY5OS1jZDdjNGEyNjNkYzNcL2RhaWNtN3UtMGU2NmY4YzMtMzliMy00Y2MzLThkNzQtM2I5YzI1ZTgzOWNjLnBuZyIsIndpZHRoIjoiPD01MTIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.t3cVxi3cd8YkImdgRF3wP2utmFxHHS5sfpP0NwLhGsg" style="width: 7%;"></li>
+        <li><p style="text-align: left;color: white;font-size: 150%;margin-top: -37px;margin-left: 54px;"><i>NORD Shopping</i></p></li>
+    </ul>
+      <ul style="display:inline-flex;/* float:right; */list-style-type: none;margin-right: 44px;margin-left: 220px;margin-top: 26px;transition: 0.3s;   visibility: visible;padding: 0px;">
+        <li class="menu-active"><a href="shopping.html">Home</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Shop</button>
+            <div class="dropdown-content">
+              <a href="#fashion">Fashion</a>
+              <a href="#electronics">Electronics</a>
+              <a href="#pantry">Pantry</a>
+              <a href="#smartphone">Smart Phones</a>
+              <a href="#homeitems">Home Items</a>
+              <a href="#pantry">Sports</a>
+              <a href="#cameras">Cameras</a>
+            </div>
+          </div>
+          <li><a href="about1.html">About</a></li>
+        <li><a href="contactus1.html">Contact</a></li>
+        <li><a href="Login11.html">Sign In</a></li>
+          <li class="register"><a href="register1.html">Register</a></li>
+          <li> <a href="cart.html"><img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-royal-brites-poster-foam-board-photo-paper-royal-lace-19.png" style="width: 7%;margin-top: -10px;"></a></li>
+
+        
+        </ul>
+      </nav>
+        <a href="#intro" class="scrollto"></a>
+    </header><br><br><br><br><br><br><br><br><br>
+    <center>
+    <div class="dropdown" style="background-color: #101522;margin-left: -37%;padding:2px">
+      <button class="dropbtn" style="color:white;padding: 25px 20px 15px 20px;">All Departments</button>
+      <div class="dropdown-content">
+    <a href="#fashion">Fashion</a>
+    <a href="#electronics">Electronics</a>
+    <a href="#pantry">Pantry</a>
+    <a href="#smartphone">Smart Phones</a>
+    <a href="#homeitems">Home Items</a>
+    <a href="#pantry">Sports</a>
+    <a href="#cameras">Cameras</a>
+      </div>
+    </div>
+    
+    <form action="#cameras" style="display: block;margin-top: 0em;width: 400px;height: 50px;border: 1px solid #ebebeb;position: relative;color: black;margin-top: -50px;">
+      <input type="text" placeholder="What do yo u need?" style="width: 300px;height: 42px;">
+      <button type="submit" style="font-size: 14px;color: #ffffff;font-weight: 800;text-transform: uppercase; display: inline-block;padding: 15px 15px 15px;background: #101522;border: none;cursor: pointer;">SEARCH</button>
+  </form>
+  <div class="w3-container" >
+    <h2 style="font-size: 100px;color: yellow;">LATEST DEALS</h2>
+  </div>
+  <div class="w3-content" style="max-width:800px" style="opacity: 60%;">
+    <img class="mySlides" src="https://i.gadgets360cdn.com/large/bbd-main2_1569816930663.jpg" style="width:100%">
+    <img class="mySlides" src="https://i.pinimg.com/originals/bf/07/b7/bf07b7b32e708a2e92f1d7ed86159298.png" style="width:100%">
+    <img class="mySlides" src="https://3.bp.blogspot.com/-8tMA3K0zpeI/WpaWV2iqb8I/AAAAAAAABY4/fkKAinXuViMi2cPIezvvG4l203baewErACLcBGAs/s1600/Get%2BBest%2BOnline%2BShopping%2BOffers%2Band%2BDeals.jpg" style="width:100%">
+    <img class="mySlides" src="https://www.thechennaimobiles.com/image/cache/catalog/HOME%20BANNER/nord-1920x630.png" style="width:100%">
+    <img class="mySlides" src="https://poorvikamobiles01.files.wordpress.com/2018/07/samsung-mobile-phones.jpg" style="width:100%">
+    <img class="mySlides" src="https://lh3.googleusercontent.com/proxy/sjMFSXGe62aUlPetTXK9cXxAwgovcGlZ7hJvSCHtXOXLDyRDYO-TvRnFtqeDsHlXAZqX3vn5Emn3_wLKlmaLjirC1j6B_EA4wRQ255ngwIvkxYNY7yp3Qw" style="width:100%">
+    <img class="mySlides" src="https://content.adidas.co.in/static/hero/STARWARS_1366x677_26th_Sept.jpg" style="width:100%">
+    <img class="mySlides" src="https://assetscdn1.paytm.com/images/catalog/view_item/616861/1601584547371.jpg?imwidth=1600&impolicy=hq" style="width:100%">
+    <img class="mySlides" src="https://img1.gadgetsnow.com/gd/imgbn/Realme-7-Pro_01.jpg" style="width:100%">
+    <img class="mySlides" src="https://d168jcr2cillca.cloudfront.net/uploadimages/coupons/11003-BajajElectricals_600x320_Banner.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-center">
+    <div class="w3-section">
+      <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+      <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+    </div>
+    <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+    <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+    <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+    <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
+    <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
+    <button class="w3-button demo" onclick="currentDiv(6)">6</button>
+    <button class="w3-button demo" onclick="currentDiv(7)">7</button> 
+    <button class="w3-button demo" onclick="currentDiv(8)">8</button> 
+    <button class="w3-button demo" onclick="currentDiv(9)">9</button>
+    <button class="w3-button demo" onclick="currentDiv(10)">10</button> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-red", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-red";
+  }
+  </script></center><br><br>
+  <video width="600" height="600" controls style="opacity: 100%;">
+    <source src="vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>  
+  
+  <div style="height:500px ; width : 800px; background-color: black;float: right;margin-top: 80px;opacity: 100%;">
+      <h1 style="margin-top: 100px;margin-left: 100px;font-size: 75px;color: yellow;">NORD Shopping</h1><p style="margin-top:;margin-left: 100px;font-size: 50px;color:white ;">Consistently one of the biggest (and most popular)E-commerce website in INDIA.</p></div>
+<br><br><br><br>
+<a id="smartphone">
+<div style="width: 1500px;height: 700px;background-color: whitesmoke ;">
+      <h2 style="text-align:center;">Featured Smart Phones</h2><br><br>
+      <div class="card" style="margin-left: 70px;">
+        <img src="https://gloimg.gbtcdn.com/storage/item/6615272824267153408/15954/a013193949d8.jpg" alt="NORD" style="width:100%">
+        <h1>One Plus Nord</h1>
+        <p class="price">Rs 29,000.00</p>
+        <p>Some text about the Product.</p>
+        <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+      </div>
+      <div class="card" style="margin-top: -520px;">
+        <img src="https://image01.oneplus.net/ebp/202003/30/1-m00-12-6c-rb8bwl6bkxqanwlpaahnodotaxo639_840_840.png" alt="One plus 8 pro" style="width:100%">
+        <h1>One Plus 8 Pro</h1>
+        <p class="price">Rs 48,000.00</p>
+        <p>Some text about the Product.</p>
+        <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+      </div>
+      <div class="card" style="margin-right: 70px;margin-top: -520px;">
+        <img src="https://www.jio.com/medias/491584688-i-2-Digital-300Wx300H?context=bWFzdGVyfHJvb3R8MzI0Njl8aW1hZ2UvcG5nfGg3Yi9oOTUvODg1NDQ2NzkwMzUxOC5wbmd8MGNlNzk1NDU0ZWYyYWYzODM4MDQwY2NjYzE4ZDJhZjMxNTcwMGU4ZGNhZWUzZDlkZmI2ZjBlMGRmMzgzYzYwNA" alt="i phone" style="width:100%">
+        <h1>i Phone 11</h1>
+        <p class="price">Rs 68,000.00</p>
+        <p>Some text about the Product.</p>
+        <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+      </div>
+    </div></a>
+    <a id="fashion">
+    <a href="cart.html" target="_blank" style="text-decoration: none;"><div style="height:500px ; width : 1500px; background-color:black;margin-top: 80px;  box-sizing: border-box;opacity: 100%;">
+      <center><h2 style="color: white;">Fashion For Men</h2>
+  <p style="color: white;">Featured products for Men</p></center>
+  <div class="row" style="  box-sizing: border-box;">
+    <div class="column" style="  box-sizing: border-box;">
+      <img src="https://cdn.shopify.com/s/files/1/0265/0790/3024/t/4/assets/men-shirts-collection-jdc.jpg" alt="Snow" style="width:100%;height: 300;">
+    </div>
+    <div class="column">
+      <img src="https://i.pinimg.com/originals/c5/14/68/c51468a79fc58ac9a836892660d85fe7.jpg" alt="Forest" style="width:100%;height: 300;">
+    </div>
+    <div class="column">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRUadvpt-dfLK1CsEV1RhnXWBPf16DbZXS9SQ&usqp=CAU" alt="Mountains" style="width:100%;height: 300;">
+    </div>
+    <div class="column">
+      <img src="https://i.pinimg.com/474x/8a/7a/1c/8a7a1c8fcafd7ce372d5db31e5ab127a.jpg" alt="Forest" style="width:100%;height: 300;">
+    </div>
+    <div class="column">
+      <img src="https://i.pinimg.com/originals/33/46/d1/3346d17e044c4db27a7a4d5862dee3ab.jpg" alt="Mountains" style="width:100%;height: 300;">
+    </div>
+    <div class="column" style="  box-sizing: border-box;">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUSEhIVFRUVFxcXFRgWFRcXGBcYFRUXGBgXFRYYHSggGBolHRcVITEiJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAPGisfIB0tLS0tLS0rLS0tKy0tLS0tLS0tLSstLS0rLS0tKzArLS0tKy0rLS0tLS0tLS0tLS0tN//AABEIAP0AxwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEDBAUHAgj/xABGEAACAQIDBQQGCAMFBwUAAAABAgADEQQSIQUGMUFRYXGBkQcTIjKhsUJicoKSwdHwI1LCFDNjsuEVQ2Sio7PxCBY0U5P/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAgEQEBAQEAAwEAAgMAAAAAAAAAARECAyExEhMiBEFh/9oADAMBAAIRAxEAPwDuBlJ6lIFJW0RAWi0RARaIgLREQEWiRHfHfilg700BqVeYAJVPtEc+z9mW4smpdE4lU9J2Mz5g4A6NSBXxIF/jJlu36SKNYAYgCm386HNTPfzQ9h85J3K1eLE7iW8NiEqKHRgyngQbg+MuTTBERARaIgLSkrECkSsQAiIgViIgIiICIiAiIgUiVmFtvEtSw1aotsyU3Zb8LhTa/jA5n6Td97lsLhnZfVsRVYEqWZbg01PMDW/U28eXYnbDEXykW0GYm3wGvneMTUZ6mfMWcm7Na+Y368/lM7ZO7zV6t6rEA+7acbd+u/Ms9RoaeNqk/Q7AaY17AxF7+MzcJjVzBgCj8GHFTp+/hOj0Nz8PazXOlukzP/ZGDI1Vr9c2sz++XT+Ppj+inbZp4tsOSfV1hcAnQOBe47xp2kzsM5zsLdijTxNJkuCp4nXlOjzr47scPLzlUlYibcyIiAiIgIiICIiAiIgIiICIiAiIgJgbewgrYWvSbg9J181I0mfLWJpZkZb2zKRfpcWvFWfXAxsk08uZLaceIB6XGl5vNlYW5vyEvvnp1lpVFIAQU2OXQuP5m+jqCAOebumbg1UDKJ5P0+hfHJfS4+LVOJ8hc+QmVgdoU6mgJBHUEfOYFXAFjfiOhJA+EtbL2OtBiV0ubkXNpn017b1setN0tcsT7IUEnTuk6kD2Ls0f2unUYA2JK8jcjTN1A5SeT0eL48n+R9kIiJ1eciIgIiICIiAiIgIiICIiAiIgIiICIiBHN8cArUvWAWa4BI0NjoPI2kRorqe+TPejaFIKaBdfWsA4S/tZFYAtbkLkC/bIPWfI56GefyT+z1+Hq/lnJXsLnlMJ675iRlYE6a2sPOXKVYHxhNnKDdBlB/lNhr2Ccnq5upLu0heoG0sgubG+puAPn5SWTU7s4UU8Otha+vgNB8vjNtPV45nL5/m63u/8IiJtyIiICIiAiIgIiICIiAiIgIiICIlrEYhEGZ2CjqTaBdnl2AFyQAOZ0EjG1t96FMH1V6rcuKr4kj5TneL21iMVVz1qhKgnKg0Re5evLrLiaysZjVba9aqT/fIFpHspMcwHeppm31TNnVpBuMh28DJkW7hKmYGjc2uw5DoLG1zpqJv9lbVz0h6wZXA11BB7QRpOHl5y69Xh7l5x6xeGcaoQJcp56aXep7R91VFrntJJ066TExW1qaAtmBtyJAA7TeUwZzj1xcVC40ZTdQvJU7Op4k+AE44vVXvyTmevrqe7eOSph0CsMyooccwQLXI6EgmbWcYw+JdK7FGKlVUXBtrct+Ykx2JvqfcxI++o/wAyj5jynox5NTaJYwmMp1Rem6sOw38+kvyKREQEREBERAREQEREBERAREje9O2cgNJDqffPQHlEgxNv71lWKULacX4/hHTtkSxmJqVTeo7N0BJMo7gm5lDabxlhVqV+Exkw7qSQt9Dp220m1uJ6ECD4ndzEVqvrKtVVtwGpsOQHACZ+FwLKBSBtfQ25a3LL3j5yUlRNdSw49eza+yvaRdja/wA/OCXGJtjZqvTZUUBiLXAms3aw2LwrerdC9JjyIuhP0hc8Oo8et5VRp34/vS/5zJVAIGItGxZuJY38OXwlAjX1EzJUKIFMDjKlFs9Jip8we8HjJTsXexmOWsL/AFgNR3gaHwtIxkEu4ewMZo6ijAgEG4OolZHt29paCkx+wf6f0khmbMaIiJAiIgIiICIiAiIgY+0MUKVJqh+iL954AedpyzF4ouzMxuSSSe/WSzfvadguHQ+03tP9VeXidZA6z62m+YzV3NrPes1lTEaE9JfwlmFwrd95aNghnuW6cuqJBSWqC/xHPVU+bS+Vlun7z/d+AJ+Rgek4t3/kJdvLVM8e8/p+UuCB6vPLfvSL/u0ZutoHkgjn8ISpMfEWGtiPHTymN/arGxlg3+FxFiDedC2Zi/W0lfnwPeOP77ZyihWPlJVuvtP1dQAn+HUsPsvy8+HlHUIm8RE5tEREBERAREQEtYquKaM54KCT4CXZGd9cdlRaKnVvab7IOnmflLJohWPxBZ2djdnN2P5DsHCabE1NCewzNxtSwJml2gx9Ux+qfkZ0ZYe0KpFIkccvz/Zmfu3iGKZWGoFxfmt7Zh2XuO8Get1th1MfXFMaUwvttyAFvMnQeMmu+my0pV6ZpqFUUUpgAcBTd7f5h5SaNDTeZCmYX0jbgNTK0sUL2kGcTPCWJbgdR52v+ktNVtLeBqkhz1c28gB8oGXTb5n5mXAeEsUX08T849Z8hAvlp5ZpYNW6mwJtrYTzg62ZgD4X/fGUYW3cRkAHU289PmRNDSxN6FzxUlfjNtvhs16lSiyuQubK4HMe9w6m1vGYW8e71XA1WpVNVYq6NbRgbFgO0NceAPMRo2+Dq6+E2dBivtDUH3l/MdDI9gq96gF+Kze4KvY2mh07YOOFagrXuR7LHtHM9vAzYyEbu40UqgI0R9GHQ8jJvOVmLCIiRSIiAiIgeatQKCzGwAuSeQE5pt3aK1aruXHG1gb2A0APT9ZON6CBhKlzYWA17WE49tnDIW9YrKrLzB94HkQDfxGo7dQd8pTate4t1IHmZiVruwpqCS3sgDt0tNbito39hrA3GUg5hpw1tp4zpnov2EDnxNVbsrBad+RsCW+It4y24iW7pbBXBYZaQsW41G6t+g4TT7/Ld6P2anwNM/kZMpDN/X/iUR0WofxAD8pifVqEbRrBEsOJljCJZcx58Jj41s7gTYvQLEC9lAtNotopMuUcIpWxB0a/HnaXlpgCeqJ4n639KwLNEkMV4XJt5mW6ruunOZL0A48SQfGVprnFn0Yc+vbILGAqkuNBf5z0+GOY201JEwarmlUF/Azb1xdg3JheUUrZmNIgXKVaTd+WotxbuuPGdH3m2GmMw7UX0PFGtcqw4EfI9hMh+69EVMUi8ku5+7w+Np0aZ6WPnvEYWphcQ1OoLMns9+vEdlrTcJVs15N/SXu76+j6+mv8Slq1uLJz7yvHuvObhmOgB049POa5upUuwFcHprOgbExXrKIJ4r7Ld4/0tOR4DD5bNnIPIDmeg6yWbubRrrXp+76tyFdba66Kb35G3LmY6mkT+Iic2iIiAiIgR/fSkGw6k/RcEd+Vh+c51XX7Z7ABOobzUc2Gb6tj+R+BM5rUU/vWb5+M1ENpYBc/sIbk8DoO8zvG62BWhhKSIQRlBuM1iWF7gNqB2crTkmPpEe1zGv7tOt7q4oVMJSYdLHvH7+MdLG2nPfSLiLVwP8IfFmnQpzff/DZsXc3tkS3m353mZ9KiGEpkteZ1V8psOJlxECrpxltaJLZm/wDE0i5Sa/GW6tJmIy1CgV8xAF8wAXQ3nu/ISlPS/ef6ZRdp1bfH5yucE3B1EsrTGW4OuvzMp6m/DQ9kC/tPCCtT094cJibKxns+qq6EcL/KX8PiShs3CZdWgj62BgSncTDgPUa2oVQD2Ekn5CTGRXcSnZav3B5Zv9JKpi/VhOE787Oq4fGvSVmyMTUVUGUFXYkAuPa0sRYdJ3acu3zxQq4xv8M5Bdh9HoL9cx8pefpWg2XhSqe66MfpD1du6y/MiSbYpZatPMQRmXX7wOotNfSdbWuPMTa7MplnRRxLAfGbR0WIicmiIiAiIgeaqBlKngQQe46TlWOplKjKfokg+BtOrzm++GyzQrZg91qlnAI4Etci/MDN5TXKVosSAQZMPRlir0qlIn3WBH3tD8hITiSt7FMx7AP1vNx6PqjrjsqghWU51J4KBe+p0N7cOpmrPSR1OQnf+j7aP9XL43Jk2kM9ITf3Q7H/AKZiLUMzGeGqxUYywRNI9+t7DPIxFlHsk5nI0F7cBcz2mnOXNlvdWuRo5AtyFhpKLVPMBe3eJdRARddD0lxltqOp+ctP1XQwLgYHRtDL+Hupty5TGXEhvZcWPWX0BGnEcjAnm5FP+E7dWA8h/rJJI/uX/wDHP2z/AJVkgmL9WLGNxIpU3qNwRSx8BwnJKLFmZ24uSx7ybyZb/wC2aa0jhg4NRipdAfaCcb2Guumkg9HFqOGc9nq3HxYATXMK2SHW0lO6GFzOzn6AsO9r/kPjIfh69/dU+PG/dynSN2tnNQoAPbOxLPbgCeCjuAA85eviRtYiJzaIiICIiAmq3k2QMTRKaZh7SE9bcD2H9Dym1iBxLE4RhUK1b2Q2yHhfnmA42l/C45sNUWrSsCvIi4sRY6d0lnpCwFnp1gPeGRj2rqvjYn8MiHqyfZ4n98ek6b6Zku5HYdn4oVaSVFNwyg/r8bzkfpJ3pFDaL0KqsyBKbAqQSMw1GU20uL6HnJXuhtoYfDNSrX9hv4dtcyty7LG/HqJzX0n7IxGJxL42n/EVgoNNQM1NUUD2f/sHE9bngRw5Tqb9df4+s+MihvJg3/34H2wUt+ICZKY/DN7teke6ov6zk5qi3CWl4Tprk68Wp/Rqr+IRs2sqBgWUXa/Ecx/pOQFR0+E2mMscNhcupCVA1mHskYmsQCvIkMpueVo0x1kVF1OcAEnmv5zGq7Vwye9iaS99RP1nHs5Bvm1631857GKawGdtByJ6np3xo65/tnCHT+0UieNrgm3WwlaO1sMP9/TA6FsvznH2qknUk99z85kYDCVar5KNN3bogJsOptwHaZNMfT+4WJWpQZkdWXPYFSGFwBfUadJJWYAXOgHGc49C9LEUMPVw+JXJ7YqUgXRjZlAZbKTwKhvvzb7/AG2sqjC07hqn942tlQ/QvwzN06X6iZ3WssRPb9YYqvVqrwJshZVN1UWGnQ+fCa/DY17+qdFvbRgNNOw8Dw0maq2AA0m83S2StXEFnF1prc9rMfZU9lgT5Tp8ZbbdLdvJatVBzcUB5X+kRyPQcpLoiYt1oiIkCIiAiIgIiIGn3s2S+KwlSlScU6pF6bkZgrjgSOlrjxnPv9i1MGq06lszKHchiwZiBmOY6mxFvATrM123NlriKZX6Q1Q9D07jM9TY6eLv83XL8fi1pUnqv7qgk+XDvPDxnP8AZe+1VHYVwXpsbqF1an2C9sy9+vym+9JbNTw4pkWzVQGB+qGa34gvlObAyc8TPbp5fLZ1/VtN5sXQq4g1MOrKjAZswtd7nMwHIEZfEEzUkT0TFxOkmPPbt15BnkjWe2EoDKy827J6AlZWBVBJru7vPg8JhbIlQ1zcuLaM/L2+AUcuzkTIWGi8z1z+vVb47vF2OsblbznFK3rCFqprlUEDKToV4nTgdePeJJKjXuWF78b8+/rOLbt7SNDFU6l9MwV+1G0a/de/eonZ8NRaq6ompY2H6nsE498ZfT2eHybz7/002Np4mmWfD0Wroq5mpKNVA4lG5cD7OvQDlOr7vbO9RQVSPbb2n+0eV+dtB4S7snZ60KQQanixtbMeszZ1myY8ndl62ERErJERAREQEREBERAREQOb+mzd0VsA2ISwegwqN9dLFCO8Zgb/AFbT56M+rt/6WfZWNX/hqxHetNiPlPlNxLEryDKEQZ5zSoqrQTKGUges0pxgL1nrN0gAsreebyogXsNhXqutKmpZ6jBEA5s5yqL8rkifVu7mwRh1zOQ1UixI4AdF/WfOXo4pZtrYMf4yn8AL/wBM+qJK1LcwiIkCIiAiIgIiICIiAiIgIiIGo3wF9nYsf8NX/wC00+S3n2FtOjnoVU/mpuv4lInx2ToO6WJXk2nllnozzcyo83jNBeXMFhWrVqdJfeqOlNe92Cj4mB4noLKVqRV2Q8VZlPepIPygCBcETzKiBL/RRTzbZwg+u5/DRqN+U+n582+hWnfbFE/ypVb/AKTL/VPpKSrCIiRSIiAiIgIiICIiAiIgIiIFDPjnHUclR0/kZk/CxH5T7Hnyfv1hxT2li0HAYiqR95y1vjLEqPmUMrKGVHkyRejXC+s2xglPKsr/AP5A1B8VEjpnQfQRhFqbYVjxpUatRe85afyqNCo9v9s7+z7UxlLpWdh9mr/FX/lcTQzpHp8oBdrKw4vhqTN3ipVT5KJzmRK8z0JQyolHTfQHh8206j8kwz+bVKQHwDT6BnE//TtSBq41uYSgB95qxP8AlE7bJVikRKyKRKSsBEpECsRED//Z" alt="Snow" style="width:100%;height: 300;">
+    </div></a></a>
+   
+  </div>
+  </div>
+    <a href="shopping.html" target="_blank" style="text-decoration: none;"><div style="height:500px ; width : 1500px; background-color:black;margin-top: 80px;  box-sizing: border-box;opacity: 100%;">
+    <center><h2 style="color: white;">Fashion For Women</h2>
+<p style="color: white;">Featured products for women</p></center>
+<div class="row" style="  box-sizing: border-box;">
+  <div class="column" style="  box-sizing: border-box;">
+    <img src="https://jovifashion61657070.files.wordpress.com/2019/01/adproduct5.jpg?w=640" alt="Snow" style="width:100%;height: 300;">
+  </div>
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEYGea9SK2eMlYZ4YRzv9jG8db8iwxvd82HQ&usqp=CAU" alt="Forest" style="width:100%;height: 300;">
+  </div>
+  <div class="column">
+    <img src="https://wforwoman.com/images/w-wordslider/m_l_banner4.jpg" alt="Mountains" style="width:100%;height: 300;">
+  </div>
+  <div class="column">
+    <img src="https://textiledeal.b-cdn.net/uploads/Shree-Ganesh-Kiyara-Pragati-Full-Stitched-Dress-Shopping.jpg" alt="Forest" style="width:100%;height: 300;">
+  </div>
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSujlzk53_iwiHyHO98IA0dDNBZLCSsXVH4Sg&usqp=CAU" alt="Mountains" style="width:100%;height: 300;">
+  </div>
+  <div class="column" style="  box-sizing: border-box;">
+    <img src="https://www.fabja.com/pub/media/catalog/product/cache/9f5c9944ae373527aea7477adf21ef48/d/u/durga-puja-special-zari-work-georgette-red-designer-saree-fj12233.jpg" alt="Snow" style="width:100%;height: 300;">
+  </div></a>
+</div>
+</div>
+<br><br><br><br>
+<a id="pantry">
+<a href="cart.html" target="_blank" style="text-decoration: none;">
+<div id="content" class="clearfix">
+  <section id="left-sidebar">
+    <p style="color: #000;font-size: xx-large;">NORD Pantry</p>
+    <div class="row1" style="  box-sizing: border-box;">
+      <div class="column1" style="  box-sizing: border-box;">
+        <img src="https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2020/02/amazon-pantry_itemsoftheweek.jpg" alt="Snow" style="width:100%;height: 200;">
+      </div>
+      <div class="column1" style="  box-sizing: border-box;">
+        <img src="https://i.pinimg.com/474x/66/88/21/668821a08b55c2008a7f0cd5feec8faa.jpg" alt="Snow" style="width:100%;height: 200;">
+      </div>
+      <div class="column1">
+        <img src="https://i.pinimg.com/474x/9e/2c/13/9e2c1359d8a40f4bce8ff20eae2d5b11.jpg" alt="Forest" style="width:100%;height: 200;">
+      </div></div>
+      <div class="row1" style="  box-sizing: border-box;">
+      <div class="column1">
+        <img src="https://i.pinimg.com/originals/88/51/a6/8851a652357743a9c07765784e0997bc.jpg" alt="Mountains" style="width:190%;height: 200;">
+      </div>
+      <div class="column1">
+        <img src="https://i.pinimg.com/474x/93/8c/11/938c11b24328d473b3f124e4b68557e6.jpg" alt="Forest" style="width:100%;height: 200;margin-left: 165px;">
+      </div>
+  </section>
+         
+  <section id="right">
+    <p style="color: #000;font-size: xx-large;">NORD Sports</p>
+    <div class="row1" style="  box-sizing: border-box;">
+      <div class="column1" style="  box-sizing: border-box;">
+        <img src="https://m.media-amazon.com/images/I/61XjQFg1l3L._AC_SS350_.jpg" alt="Snow" style="width:100%;height: 200;">
+      </div>
+      <div class="column1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSl0baKXE_s2qU69bcF0sUjMiHXvuojccttA&usqp=CAU" alt="Forest" style="width:200%;height: 200;">
+      </div>
+    </div>
+    <div class="row1" style="  box-sizing: border-box;">
+      <div class="column1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShXr9GFPTPYyK8c6I9hHFYD5t_seWFW1b5-A&usqp=CAU" alt="Mountains" style="width:80%;height: 200;margin-right: 50px;">
+      </div>
+      <div class="column1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR_8a2-lsSipIEydE7WWhGlqVA_R4lH1884iA&usqp=CAU" alt="Forest" style="width:80%;height: 200;margin-left: -100px;">
+      </div>
+      <div class="column1">
+        <img src="https://cdn.shopify.com/s/files/1/3099/4872/products/WIL9000028510090L_01_1400x.jpg?v=1568885407" alt="Forest" style="width:80%;height: 200;margin-left: 520;
+        margin-top: -238px;">
+      </div>
+  </section>
+</div></a></a>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a id="electronics">
+<div style="width: 1500px;height: 700px;background-color: whitesmoke ;">
+  <h2 style="text-align:center;">Electronics</h2><br><br>
+  <div class="card" style="margin-left: 70px;">
+    <img src="https://i.dell.com/sites/csimages/Video_Imagery/all/xps_7590_touch.png" alt="lap" style="width:100%; height: 200;">
+    <h1>Dell XPS15</h1>
+    <p class="price">Rs 89,999.00</p>
+    <p>Some text about the Product.</p>
+    <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+  </div>
+  <div class="card" style="margin-top: -421px;">
+    <img src="https://seller.shoponn.in/Item/SanDisk%20OTG%2016GB%202%200%20DD1%2016GB%20Pen%20drive%20Pack%20of%203%20A.jpg" alt="pow" style="width:100%;height: 200;">
+    <h1>San Disk Pendrive</h1>
+    <p class="price">Rs 999.00</p>
+    <p>Some text about the Product.</p>
+    <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+  </div>
+  <div class="card" style="margin-right: 70px;margin-top: -421px;">
+    <img src="https://imgk.timesnownews.com/story/oneplus_bullets_z_wireless_0.jpg?tr=w-1200,h-900" alt="i phone" style="width:100%;height: 200;">
+    <h1>One Plus Bullets</h1>
+    <p class="price">Rs 1,999.00</p>
+    <p>Some text about the Product.</p>
+    <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+  </div>
+</div></a>
+<a id="homeitems">
+<a href="cart.html" target="_blank" style="text-decoration: none;"><div style="height:500px ; width : 1500px; background-color:black;margin-top: 80px;  box-sizing: border-box;opacity: 100%;">
+  <center><h2 style="color: white;">HOME Appliances</h2>
+<p style="color: white;">Featured products for a smart home</p></center>
+<div class="row" style="  box-sizing: border-box;">
+<div class="column" style="  box-sizing: border-box;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTw_UkkRXmQ6fB4SEvuUZLXm5ysI1k7-3Rgww&usqp=CAU" alt="Snow" style="width:100%;height: 300;">
+</div>
+<div class="column">
+  <img src="https://www.ifbappliances.com/media/catalog/product/cache/1/image/550x629/9df78eab33525d08d6e5fb8d27136e95/4/_/4.png" alt="Forest" style="width:100%;height: 300;">
+</div>
+<div class="column">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS3F8okyRJ1nLcHwGEZiOvmKv1aYqfZaGrGQA&usqp=CAU" alt="Mountains" style="width:100%;height: 300;">
+</div>
+<div class="column">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/71326IINUEL.jpg" alt="Forest" style="width:100%;height: 300;">
+</div>
+<div class="column">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRzURyTSnJfoKB6Lc11RHC3aEHP8fwMLyuHgA&usqp=CAU" alt="Mountains" style="width:100%;height: 300;">
+</div>
+<div class="column" style="  box-sizing: border-box;">
+  <img src="https://images-na.ssl-images-amazon.com/images/I/41F3r0HMkCL._SX425_.jpg" alt="Snow" style="width:100%;height: 300;">
+</div></a>
+</div>
+</div></a> 
+<a id="cameras">
+<div style="width: 1500px;height: 700px;background-color: whitesmoke ;">
+  <h2 style="text-align:center;">DSLR Cameras</h2><br><br>
+  <div class="card" style="margin-left: 70px;">
+    <img src="https://www.usa.canon.com/internet/wcm/connect/us/a98b8be9-e3c0-470c-87d2-1eafaf370da3/5dmkiv_3q_300x300.gif?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_P1KGHJ01L85180AUEPQQJ53034-a98b8be9-e3c0-470c-87d2-1eafaf370da3-lqOy2EV&&alt=EOS~5D~Mark~IV" alt="lap" style="width:100%; height: 200;">
+    <h1>Canon DSLR</h1>
+    <p class="price">Rs 45,999.00</p>
+    <p>Some text about the Product.</p>
+    <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+  </div>
+  <div class="card" style="margin-top: -421px;">
+    <img src="https://static.bhphotovideo.com/explora/sites/default/files/2-1450719469_img_566498.jpg" alt="pow" style="width:100%;height: 200;">
+    <h1>Video Camera</h1>
+    <p class="price">Rs 1,99,999.00</p>
+    <p>Some text about the Product.</p>
+    <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+  </div>
+  <div class="card" style="margin-right: 70px;margin-top: -421px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQvVTDox337zvfk0jf8uYSOkMTQ3sWiiRceFw&usqp=CAU" alt="i phone" style="width:100%;height: 200;">
+    <h1>Nikon DSLR</h1>
+    <p class="price">Rs 64,999.00</p>
+    <p>Some text about the Product.</p>
+    <p><button onclick="window.location.href='cart.html';">Add to Cart</button></p>
+  </div>
+</div></a>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <center>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-info">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b12e9fcb-cf00-4b56-9f99-cd7c4a263dc3/daicm7u-0e66f8c3-39b3-4cc3-8d74-3b9c25e839cc.png/v1/fill/w_512,h_512,strp/unreal_engine_honeycomb_by_vitalfyre_daicm7u-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01MTIiLCJwYXRoIjoiXC9mXC9iMTJlOWZjYi1jZjAwLTRiNTYtOWY5OS1jZDdjNGEyNjNkYzNcL2RhaWNtN3UtMGU2NmY4YzMtMzliMy00Y2MzLThkNzQtM2I5YzI1ZTgzOWNjLnBuZyIsIndpZHRoIjoiPD01MTIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.t3cVxi3cd8YkImdgRF3wP2utmFxHHS5sfpP0NwLhGsg" alt="NORD Shopping" style="width: 100px;height: 100px;"><br><b style=" text-align: left;color: white;padding-bottom:50px ;font-size: 200%;display: inline;"><i>NORD Shopping</i></b>
+              <p>Consistently one of the biggest (and most popular) E-commerce website in INDIA.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                 Ooty <br>
+                Coimbatore<br>
+                INDIA <br>
+                <strong>Phone:</strong>123456789<br>
+                <strong>Email:</strong>nord@gmail.com<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          © Copyright <strong>NORD Shopping</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by CR Developers
+        </div>
+      </div>
+    </footer>
+    </center>
+</body></html>

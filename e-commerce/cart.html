@@ -1,0 +1,318 @@
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+          .dropbtn {
+             background-color:transparent;
+            /* color: white; */
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            
+            text-decoration: none;
+            display: inline-block;
+            color: rgba(202, 206, 221, 0.8);
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            /* outline: none; */
+            margin-top: -13px;
+            
+          }
+          
+          li a{
+            padding: 35px;
+            text-decoration:none;
+            color: rgba(202, 206, 221, 0.8);
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+          }
+          li a:hover{
+            color:white;
+          }
+      
+          .dropdown {
+            position: relative;
+            display: inline-block;
+            background:transparent;
+            color: rgba(202, 206, 221, 0.8);
+            border:none;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {background-color: #ddd;}
+          
+          .dropdown:hover .dropdown-content {display: block;}
+          
+          .dropdown:hover .dropbtn {color:white}
+        body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color:  #101522;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color:  grey;
+  color: black;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color:  grey;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color:  #101522;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+        </style>
+    </head>
+    <body >
+              <header id="header">
+                
+                <nav style="display: -webkit-box;background: #101522;">
+          
+                  <ul style="list-style-type: none">
+                          <!-- <div class="container"> -->
+                         <li> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b12e9fcb-cf00-4b56-9f99-cd7c4a263dc3/daicm7u-0e66f8c3-39b3-4cc3-8d74-3b9c25e839cc.png/v1/fill/w_512,h_512,strp/unreal_engine_honeycomb_by_vitalfyre_daicm7u-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01MTIiLCJwYXRoIjoiXC9mXC9iMTJlOWZjYi1jZjAwLTRiNTYtOWY5OS1jZDdjNGEyNjNkYzNcL2RhaWNtN3UtMGU2NmY4YzMtMzliMy00Y2MzLThkNzQtM2I5YzI1ZTgzOWNjLnBuZyIsIndpZHRoIjoiPD01MTIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.t3cVxi3cd8YkImdgRF3wP2utmFxHHS5sfpP0NwLhGsg" style="width: 7%;"></li>
+                          <li><p style="text-align: left;color: white;font-size: 150%;margin-top: -37px;margin-left: 54px;"><i>NORD Shopping</i></p></li>
+                        <!-- </div> -->
+                      </ul>
+                        <ul style="display:inline-flex;/* float:right; */list-style-type: none;margin-right: 44px;margin-left: 220px;margin-top: 26px;transition: 0.3s;   visibility: visible;padding: 0px;">
+                          <li class="menu-active"><a href="shopping.html">Home</a></li>
+                            <div class="dropdown">
+                              <button class="dropbtn">Shop</button>
+                              <div class="dropdown-content">
+                                <a href="shopping.html#fashion">Fashion</a>
+                                <a href="shopping.html#electronics">Electronics</a>
+                                <a href="shopping.html#pantry">Pantry</a>
+                                <a href="shopping.html#smartphone">Smart Phones</a>
+                                <a href="shopping.html#homeitems">Home Items</a>
+                                <a href="shopping.html#pantry">Sports</a>
+                                <a href="shopping.html#cameras">Cameras</a>
+                              </div>
+                            </div>
+                            <li><a href="about1.html">About</a></li>
+                          <li><a href="contactus1.html">Contact</a></li>
+                          <li><a href="Login11.html">Sign In</a></li>
+                            <li class="register"><a href="register1.html">Register</a></li>
+                            <li> <a href="cart.html"><img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-royal-brites-poster-foam-board-photo-paper-royal-lace-19.png" style="width: 7%;margin-top: -10px;"></a></li>
+                  
+                          
+                          </ul>
+                        </nav>
+                          <a href="#intro" class="scrollto"></a>
+                      </header><br><br><br><br><br><br>
+
+<center><h2>CART</h2>
+<p>Please make sure about the information given below is correct and ensure the product purchased is correct</p>
+</center>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="shopping.html">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3 style="color: blanchedalmond;">Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="ABC">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="ABC@gamil.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="10/213 Y,abc street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Ooty">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Tamil Nadu">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3 style="color: blanchedalmond;">Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="ABC">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="October">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="007">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4 style="color: blanchedalmond;">Cart <span class="price" style="color:white"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="shopping.html#smartphone">Product 1</a> <span class="price" style="color: blanchedalmond;">Rs 29,999.00</span></p>
+      <p><a href="shopping.html#electronics">Product 2</a> <span class="price"style="color: blanchedalmond;">Rs 1,999.00</span></p>
+      <p><a href="#">Product 3</a> <span class="price"style="color: blanchedalmond;">RS 500</span></p>
+      <p><a href="#">Product 4</a> <span class="price"style="color: blanchedalmond;">Rs500</span></p>
+      <hr>
+      <p style="color: blanchedalmond;">Total <span class="price" style="color:blanchedalmond"><b>Rs33,000.00</b></span></p>
+    </div>
+  </div>
+</div><br><br><br><br>
+          <center>
+          <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row"style="margin-left:500px">
+                  <div class="col-lg-3 col-md-6 footer-info" >
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b12e9fcb-cf00-4b56-9f99-cd7c4a263dc3/daicm7u-0e66f8c3-39b3-4cc3-8d74-3b9c25e839cc.png/v1/fill/w_512,h_512,strp/unreal_engine_honeycomb_by_vitalfyre_daicm7u-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01MTIiLCJwYXRoIjoiXC9mXC9iMTJlOWZjYi1jZjAwLTRiNTYtOWY5OS1jZDdjNGEyNjNkYzNcL2RhaWNtN3UtMGU2NmY4YzMtMzliMy00Y2MzLThkNzQtM2I5YzI1ZTgzOWNjLnBuZyIsIndpZHRoIjoiPD01MTIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.t3cVxi3cd8YkImdgRF3wP2utmFxHHS5sfpP0NwLhGsg"  alt="NORD Shopping" style="width: 100px;height: 100px;" ><br><b style=" text-align: left;color: white;padding-bottom:50px ;font-size: 200%;display: inline;"><i>NORD Shopping</i></b>
+                    <p>Consistently one of the biggest (and most popular) E-commerce website in INDIA.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-contact"><br><br><br><br><br><br><br><br><br><br><br>
+                    <h4 style="margin-left: -500px;">Contact Us</h4>
+                    <p style="margin-left: -500px;">
+                       Ooty <br>
+                      Coimbatore<br>
+                      INDIA <br>
+                      <strong>Phone:</strong>123456789<br>
+                      <strong>Email:</strong> nord@gmail.com<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="copyright">
+                &copy; Copyright <strong>NORD Shopping</strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                Designed by CR Developers</a>
+              </div>
+            </div>
+          </footer>
+          </center>
+    </body>
+</html>
